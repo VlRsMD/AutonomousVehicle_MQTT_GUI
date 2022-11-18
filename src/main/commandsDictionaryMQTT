@@ -1,0 +1,14 @@
+Commands transmitted via MQTT (text of the commands is put inside " " sign):
+1. "S" - start movement of the Golf Cart;
+2. "A" - stop movement of the Golf Cart;
+3. "F" - move in the direction forward;
+4. "B" - move in the direction backwards;
+5. "G_<double>" - move with the speed of <double> km/h;
+6. "P_<double>" - adjust steering position to the angle of <double> degrees.
+
+List  of topics:
+1. "GolfCart/StartOrStop" - under this topic messages to start or stop movement of the Golf Cart are published.
+2. "GolfCart/DrivingDirection" - under this topic messages about driving direction (forward/backward) of the Golf Cart are published.
+3. "GolfCart/Speed" - under this topic messages about the speed of the Golf Cart are published.
+4. "GolfCart/SteeringPosition" - under this topic messages about the steering position of the Golf Cart are published.
+5. "GolfCart/DistanceToObstacle" - under this topic messages about the distance from the Golf Cart to obstacle are published.
